@@ -1,0 +1,191 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="159dp"
+        android:background="@color/Black"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageView2"
+            android:layout_width="433dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toTopOf="@+id/textView"
+            app:layout_constraintEnd_toStartOf="@+id/textView2"
+            app:layout_constraintHorizontal_bias="0.677"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/klogo" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:text="Rate Us"
+        android:textColor="@color/Black"
+        android:textSize="38dp"
+        android:textAlignment="center"/>
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:text="How satisfied are you with our app?"
+        android:textAlignment="center"
+        android:textColor="@color/Black"
+        android:layout_marginTop="60dp"
+        android:textSize="19dp"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RadioButton
+            android:id="@+id/first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:layout_marginTop="90dp"
+            android:layout_marginLeft="40dp"
+            android:textColor="@color/Black" />
+        <RadioButton
+            android:id="@+id/second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="-32dp"
+            android:textColor="@color/Black" />
+        <RadioButton
+            android:id="@+id/third"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="-32dp"
+            android:textColor="@color/Black" />
+        <RadioButton
+            android:id="@+id/fourth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="-32dp"
+            android:textColor="@color/Black" />
+        <RadioButton
+            android:id="@+id/fifth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="-32dp"
+            android:textColor="@color/Black" />
+    </RadioGroup>
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="356dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="130dp"
+        android:text="Would you recommend us?" />
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:text="Which all categories have you tried?"
+        android:textAlignment="center"
+        android:textColor="@color/Black"
+        android:layout_marginTop="170dp"
+        android:textSize="19dp"/>
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="107dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="40dp"
+        android:text="Lounges" />
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="107dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="130dp"
+        android:text="Sports" />
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="107dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="210dp"
+        android:text="Banquets" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_marginTop="250dp"
+        android:text="Where did you hear about us?"
+        android:textAlignment="center"
+        android:textColor="@color/Black"
+        android:textSize="19dp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="296dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="300dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_marginTop="335dp"
+        android:text="How many stars would you give us?"
+        android:textAlignment="center"
+        android:textColor="@color/Black"
+        android:textSize="19dp" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="380dp"
+        android:numStars="3"/>
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="176dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:background="@color/green"
+        android:layout_marginLeft="120dp"/>
+
+</RelativeLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

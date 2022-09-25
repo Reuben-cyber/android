@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/color"
+        android:icon="@drawable/ic_baseline_invert_colors_24"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/more"
+        android:icon="@drawable/ic_baseline_more_vert_24"
+        app:showAsAction="always"
+        >
+
+        <menu>
+            <item
+                android:id="@+id/about"
+                android:title="About us"
+                android:icon="@drawable/ic_baseline_person_24"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/privacy"
+                android:title="Privacy"
+                android:icon="@drawable/ic_baseline_article_24"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+</menu>
+
+
+
+
